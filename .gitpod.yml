@@ -1,6 +1,8 @@
 tasks:
-  - before: >
-      sh $HOME/.dotfiles/base-install.sh && zsh
+  - before: >      
+      git clone https://github.com/zpthree/gitpod-dotfiles.git ~/dotfiles
+      sh ~/dotfiles/base.sh
+      zsh
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
